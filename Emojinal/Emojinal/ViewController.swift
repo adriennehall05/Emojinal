@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     let emojis = ["😃": "Happy", "🎶": "Musical", "🏒": "sporty"]
+    let customMessage = ["Happy": ["ayeeeee", "glad your having a good day", "stay solid", "pretty hyped aye?", "lets goooooooooo"]]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
         UIButton) {
         let selectedEmotion =
         sender.titleLabel?.text
+        let emojiMessage = customMessage[emojis[selectedEmotion!]!]
+        [0]
         let alertController = UIAlertController(title: selectedEmotion, message: "hello", preferredStyle:
             UIAlertController.Style.alert)
         
@@ -28,3 +31,4 @@ class ViewController: UIViewController {
     present(alertController, animated: true, completion: nil)
 }
 }
+
