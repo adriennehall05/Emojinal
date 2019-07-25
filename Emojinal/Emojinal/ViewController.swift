@@ -14,7 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    @IBAction func showMessage (sender:
+        UIButton) {
+        let alertController = UIAlertController(title: "We all get a little Emojinal", message: "hello", preferredStyle:
+            UIAlertController.Style.alert)
+        
+    
+    present(alertController, animated: true, completion: nil)
 }
-
+}
